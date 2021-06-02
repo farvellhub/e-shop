@@ -29,7 +29,7 @@ const Checkout = () => {
 
                     <Stepper activeStep={0} className={ classes.stepper }>
                         {
-                            steps
+                           // todo steps
                         }
                     </Stepper>
 

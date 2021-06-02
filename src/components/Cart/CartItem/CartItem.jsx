@@ -32,7 +32,7 @@ const CartItem = ({ item, update, remove }) => {
                 <div className={ classes.buttons }>
                     <Button 
                         onClick={ () => update( item.id, ( item.quantity - 1 ) ) } 
-                        type="button" 
+                        type="button"
                         size="small"
                     >
                         -
