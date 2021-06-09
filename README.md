@@ -17,15 +17,22 @@
 
 ## Where to start.
 
-- npm run dev - to run development build.
+"dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
 
-- npm run-script build to run development build 
+- npm run dev -   to run development build.
 
-- npm run build-prod for production environment.
+- npm run-script -   build to run development build.
+
+- npm run test -  runs react test.
+
+- npm run eject -    eject react script.
 
 ## Directories
 
-- /public/build: Babel bundle.
+- /build: React bundle.
 
 - /src/components: Component's root directory.
 
