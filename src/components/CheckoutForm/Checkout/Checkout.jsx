@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+
+import AddressForm from "../AddressForm";
+import PaymentForm from "../PaymentForm";
 
 import {
 	Paper,
@@ -16,8 +19,18 @@ import useStyles from "./styles";
 const steps = [ "Shipping address", "Payment details" ];
 
 const Checkout = () => {
-	// const [ activeStep, setActiveStep ] = useState( 0 );
+	
+	const [ activeStep ] = useState( 0 );
 	const classes = useStyles();
+
+	const Confirmation = () => (
+		<div>Confirmation</div>
+	);
+
+	const Form = () => (( activeStep === 0 )
+		? <AddressForm />
+		: <PaymentForm />
+	);
     
 	return (
 		<>
@@ -37,7 +50,7 @@ const Checkout = () => {
 							))
 						}
 					</Stepper>
-
+					{ activeStep === steps.length ? <Confirmation /> : <Form /> }
 				</Paper>
 
 			</main>
