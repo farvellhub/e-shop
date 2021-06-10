@@ -17,18 +17,16 @@
 
 ## Where to start.
 
-"dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+- npm run dev - Run development serve.
 
-- npm run dev -   to run development build.
+- npm run build - Run development build.
 
-- npm run-script -   build to run development build.
+- npm run test - Run react test.
 
-- npm run test -  runs react test.
 
-- npm run eject -    eject react script.
+# .env file?
+You need a token from commerce.js and write it at .env file on root folder. Be sure you name it REACT_APP_CHECK_PUBLIC_KEY.
+
 
 ## Directories
 
@@ -38,6 +36,7 @@
 
 - /src/App.js: App component, entry point.
 
+
 ## Characteristics.
 
 - React as a framework.
@@ -46,8 +45,6 @@
 
 - babel7 as ES7 transpiler.
 
-# .env file?
-You need a token from commerce.js and write it at .env file on root folder. Be sure you name it REACT_APP_CHECK_PUBLIC_KEY.
 
 ## Questions?
 
