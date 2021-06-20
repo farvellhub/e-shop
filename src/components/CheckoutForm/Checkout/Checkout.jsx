@@ -1,5 +1,4 @@
 /* eslint-disable react/display-name */
-/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { CssBaseline, Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";

@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
 import React from "react";
 import { Typography, Button, Divider } from "@material-ui/core";
 import { Elements, CardElement, ElementsConsumer } from "@stripe/react-stripe-js";
@@ -7,6 +5,7 @@ import { loadStripe } from "@stripe/stripe-js";
 
 import Review from "./Review";
 
+// eslint-disable-next-line no-undef
 const stripePromise = loadStripe( process.env.REACT_APP_STRIPE_PUBLIC_KEY );
 
 const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptureCheckout }) => {
@@ -54,7 +53,7 @@ const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, onCaptur
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <Button variant="outlined" onClick={backStep}>Back</Button>
                             <Button type="submit" variant="contained" disabled={!stripe} color="primary">
-                Pay {checkoutToken.live.subtotal.formatted_with_symbol}
+                                Pay {checkoutToken.live.subtotal.formatted_with_symbol}
                             </Button>
                         </div>
                     </form>

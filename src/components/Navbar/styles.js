@@ -9,29 +9,28 @@ export default makeStyles(( theme ) => ({
         [theme.breakpoints.up( "sm" )]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
-        }
+        },
     },
     title: {
         flexGrow: 1,
         alignItems: "center",
         display: "flex",
-        fontSize: "22px",
         textDecoration: "none",
-        color: "#222222"
+        fontSize: "24px",
     },
     image: {
-        paddingBottom: "5px",
-        width: "50px",
-        height: "35px"
+        marginRight: "10px",
+        width: "40px",
+        height: "40px"
     },
     menuButton: {
         marginRight: theme.spacing( 2 ),
         [theme.breakpoints.up( "sm" )]: {
             display: "none",
-        }
+        },
     },
     grow: {
-        flexGrow: 1
+        flexGrow: 1,
     },
     search: {
         position: "relative",
@@ -45,7 +44,7 @@ export default makeStyles(( theme ) => ({
         width: "100%",
         [theme.breakpoints.up( "sm" )]: {
             width: "auto",
-        }
+        },
     },
     searchIcon: {
         padding: theme.spacing( 0, 2 ),
@@ -54,10 +53,10 @@ export default makeStyles(( theme ) => ({
         pointerEvents: "none",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     inputRoot: {
-        color: "inherit"
+        color: "inherit",
     },
     inputInput: {
         padding: theme.spacing( 1, 1, 1, 0 ),
@@ -66,7 +65,7 @@ export default makeStyles(( theme ) => ({
         transition: theme.transitions.create( "width" ),
         width: "100%",
         [theme.breakpoints.up( "md" )]: {
-            width: "20ch"
-        }
-    }
+            width: "20ch",
+        },
+    },
 }));
