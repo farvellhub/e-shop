@@ -9,7 +9,7 @@
  <a href="https://discord.gg/tpNtcJHw" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
 </p>
 
-> Real e-shop developed on React, Commmerce.js, and Strapi.
+> Real e-shop developed on React, Commmerce.js, and Stripe.
 
 ## Installation
 
